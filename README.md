@@ -16,7 +16,7 @@ Copy the skill directories to your Claude Code skills folder:
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/security-agent-skills.git
+git clone https://github.com/ethanolivertroy/security-agent-skills.git
 
 # Copy skills to Claude Code
 cp -r security-agent-skills/skills/* ~/.claude/skills/
@@ -79,4 +79,4 @@ MIT License - see [LICENSE](./LICENSE) for details.
 
 - [Agent Skills Specification](https://agentskills.io)
 - [Anthropic Skills Examples](https://github.com/anthropics/skills)
-- [mesh-config-analyzer](https://github.com/YOUR_USERNAME/mesh-config-analyzer) - The underlying analysis engine
+- [mesh-config-analyzer](https://github.com/ethanolivertroy/mesh-config-analyzer) - The underlying analysis engine
