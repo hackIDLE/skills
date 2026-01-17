@@ -10,9 +10,46 @@ A collection of security-focused agent skills following the [Agent Skills](https
 
 ## Installation
 
-### Claude Code
+### Quick Install (Recommended)
 
-Copy the skill directories to your Claude Code skills folder:
+```bash
+# Install all skills
+npx add-skill ethanolivertroy/security-agent-skills
+
+# Or install a specific skill
+npx add-skill ethanolivertroy/security-agent-skills --skill mesh-security
+
+# List available skills first
+npx add-skill ethanolivertroy/security-agent-skills --list
+```
+
+### Global vs Project Installation
+
+```bash
+# Global (available in all projects)
+npx add-skill -g ethanolivertroy/security-agent-skills
+
+# Project-level (in current directory)
+npx add-skill ethanolivertroy/security-agent-skills
+```
+
+### Supported Agents
+
+`add-skill` automatically detects and installs to:
+- Claude Code (`~/.claude/skills/`)
+- Cursor (`~/.cursor/skills/`)
+- Codex (`~/.codex/skills/`)
+- OpenCode (`~/.config/opencode/skill/`)
+- Gemini CLI
+- VS Code
+- GitHub Copilot
+- And more...
+
+These skills follow the [Agent Skills specification](https://agentskills.io/specification) and work with any compatible agent platform.
+
+### Manual Installation
+
+If you prefer manual installation:
 
 ```bash
 # Clone the repo
@@ -24,15 +61,6 @@ cp -r security-agent-skills/skills/* ~/.claude/skills/
 # Install dependencies
 cd ~/.claude/skills/mesh-security && npm install
 ```
-
-### Other Compatible Agents
-
-These skills follow the [Agent Skills specification](https://agentskills.io/specification) and work with any compatible agent platform including:
-- Gemini CLI
-- Cursor
-- VS Code
-- GitHub Copilot
-- And more
 
 ## Skills Overview
 
