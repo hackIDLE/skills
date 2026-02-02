@@ -1,6 +1,6 @@
-# Security Agent Skills
+# hackIDLE Skills
 
-A collection of security-focused agent skills following the [Agent Skills](https://agentskills.io) open standard. These skills enable AI agents to perform security analysis, compliance assessments, and remediation tasks.
+A collection of security-focused agent skills from [hackIDLE](https://hackidle.com), following the [Agent Skills](https://agentskills.io) open standard. These skills enable AI agents to perform security analysis, compliance assessments, and remediation tasks.
 
 ## Available Skills
 
@@ -14,23 +14,23 @@ A collection of security-focused agent skills following the [Agent Skills](https
 
 ```bash
 # Install all skills
-npx add-skill ethanolivertroy/security-agent-skills
+npx add-skill hackIDLE/skills
 
 # Or install a specific skill
-npx add-skill ethanolivertroy/security-agent-skills --skill mesh-security
+npx add-skill hackIDLE/skills --skill mesh-security
 
 # List available skills first
-npx add-skill ethanolivertroy/security-agent-skills --list
+npx add-skill hackIDLE/skills --list
 ```
 
 ### Global vs Project Installation
 
 ```bash
 # Global (available in all projects)
-npx add-skill -g ethanolivertroy/security-agent-skills
+npx add-skill -g hackIDLE/skills
 
 # Project-level (in current directory)
-npx add-skill ethanolivertroy/security-agent-skills
+npx add-skill hackIDLE/skills
 ```
 
 ### Supported Agents
@@ -53,10 +53,10 @@ If you prefer manual installation:
 
 ```bash
 # Clone the repo
-git clone https://github.com/ethanolivertroy/security-agent-skills.git
+git clone https://github.com/hackIDLE/skills.git hackidle-skills
 
 # Copy skills to Claude Code
-cp -r security-agent-skills/skills/* ~/.claude/skills/
+cp -r hackidle-skills/skills/* ~/.claude/skills/
 
 # Install dependencies
 cd ~/.claude/skills/mesh-security && npm install
