@@ -7,6 +7,7 @@ A collection of security-focused agent skills from [hackIDLE](https://hackidle.c
 | Skill | Description |
 |-------|-------------|
 | [mesh-security](./skills/mesh-security/) | Analyze Istio, Consul, and Linkerd service mesh configurations for security vulnerabilities with NIST 800-53 control mappings |
+| [iac-security-scanner](./skills/iac-security-scanner/) | Scan Terraform, K8s, CloudFormation, ARM, and Dockerfiles for security misconfigurations with NIST 800-53 mappings |
 
 ## Installation
 
@@ -58,7 +59,7 @@ git clone https://github.com/hackIDLE/skills.git hackidle-skills
 # Copy skills to Claude Code
 cp -r hackidle-skills/skills/* ~/.claude/skills/
 
-# Install dependencies
+# Install dependencies (mesh-security only; iac-security-scanner has none)
 cd ~/.claude/skills/mesh-security && npm install
 ```
 
@@ -88,6 +89,16 @@ node ~/.claude/skills/mesh-security/lib/remediation-engine.js ./consul-config.js
 # Create FedRAMP compliance report
 node ~/.claude/skills/mesh-security/lib/report-generator.js ./linkerd-config.yaml --fedramp
 ```
+
+### iac-security-scanner
+
+Security scanning for Infrastructure as Code files:
+
+- **Supported IaC:** Terraform (HCL), Kubernetes YAML, CloudFormation, ARM templates, Dockerfiles
+- **Cloud Providers:** AWS (305 policies), Azure (178), GCP (234), Kubernetes (43), Docker (27), GitHub (3)
+- **Total Policies:** 790 security checks derived from Terrascan
+- **Compliance:** NIST 800-53 control mappings
+- **Output:** Findings with severity levels, remediation guidance, compliance reports
 
 ## Contributing
 
