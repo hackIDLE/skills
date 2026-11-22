@@ -1,5 +1,7 @@
 # hackIDLE Skills
 
+> **Project moved.** The portable `iac-security-scanner` and `mesh-security` skills moved to [Open Control Tools](https://github.com/ethanolivertroy/open-ctrl-tools). In a monorepo checkout, start with `skills/skills/iac-security-scanner/SKILL.md` or `skills/skills/mesh-security/SKILL.md`. The generated Terrascan policy references and the insecure Terraform example stay in this archive. The `npx add-skill hackIDLE/skills` commands below install this archived snapshot.
+
 A collection of security-focused agent skills from [hackIDLE](https://hackidle.com), following the [Agent Skills](https://agentskills.io) open standard. These skills enable AI agents to perform security analysis, compliance assessments, and remediation tasks.
 
 ## Available Skills
